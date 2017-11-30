@@ -11,6 +11,7 @@ task main() {
 
 	while(1==1)
 	{
+		/*Following code controls the wheels*/
 		leftvalue = vexRT[3] + vexRT[2];
 		rightvalue = vexRT[3] - vexRT[2];
 
@@ -27,6 +28,7 @@ task main() {
 			motor[right] = 127;
 		}
 
+		/*Following code controls hand and claw */
 		motor[hand] = vexRT[4]/2;
 		int btn6UVal = vexRT[Btn6U]*63;
 		int btn5UVal = vexRT[Btn5U]*63;
